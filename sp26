@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Write a menu driven program which has following options:
+=======
+#  Write a menu driven program which has following options:
+>>>>>>> 4d37cd92e6e3279b4c43842fb736ff737d52f96f
 #1) Contents of current directory
 #2) list of users who have currently logged in
 #3) present wokring directory 
