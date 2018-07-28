@@ -1,0 +1,10 @@
+# Coping user given source file to destination
+
+echo enter source filename and target file name
+read src trg
+if cp $src $trg
+then
+echo "$src file copied successfully to $trg"
+else
+echo "failed to copy the file $src to $trg"
+fi

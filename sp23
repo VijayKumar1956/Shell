@@ -1,0 +1,20 @@
+# Sample program for case
+
+echo "Enter a number between 1 to 4: \c"
+read n
+case $n in
+1)
+echo "You entered 1"
+;;
+2)
+echo "You entered 2"
+;;
+3)
+echo "You entered 3"
+;;
+4)
+echo "You entered 4"
+;;
+*) echo "Invalid option."
+;;
+esac

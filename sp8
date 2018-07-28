@@ -1,0 +1,10 @@
+# Changig directory, which is given by user.
+
+echo "Enter directory name"
+read dname
+if cd $dname
+then
+echo "changed to $dname"
+pwd
+fi
+

@@ -1,0 +1,10 @@
+# Write a program to check read permission
+
+echo "Enter a file name"
+read fname
+if [ -r $fname ]
+then
+cat $fname
+else
+chmod u+r $fname
+fi

@@ -1,0 +1,12 @@
+# Write a program to check given number is +ve or -ve number
+
+echo "Enter a number"
+read n
+if test $n -gt 0
+then
+echo "$n is +ve number"
+else
+echo "$n is -ve number"
+fi
+
+

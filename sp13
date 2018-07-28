@@ -1,0 +1,9 @@
+# Write a program to check how many users working on the system
+
+total=`who | wc -l`
+if test $total -eq 1
+then
+echo "You are the only user working on the system"
+else
+echo "There are $total users working on the system \n`who`"
+fi

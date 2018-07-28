@@ -1,0 +1,5 @@
+# Write a program to read 2 numbers and display them. 
+
+echo "Enter 2 numbers:\c"
+read a b
+echo "Your numbers are $a and $b"

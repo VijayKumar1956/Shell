@@ -1,0 +1,13 @@
+#Write a program to search string in a file
+
+echo "Enter a file name"
+read fname
+echo "Enter the string to search"
+read str
+if grep $str $fname
+then
+echo "$str is found in the file $fname"
+else
+echo "$str is not found in $fname"
+fi
+
