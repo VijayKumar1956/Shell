@@ -1,0 +1,21 @@
+# Write a program to find student result
+
+echo "Enter three subject marks"
+read s1 s2 s3
+if [ $s1 -ge 40 ]
+then 
+	if [ $s2 -ge 40 ]
+        then
+		if [ $s3 -ge 40 ]
+    		then
+		   echo "Student passed all the subjects"
+                else
+		   echo "Student failed"
+                fi
+	else
+             echo "Student failed"
+        fi
+else
+   echo "Student failed"
+fi
+

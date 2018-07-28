@@ -1,0 +1,35 @@
+# Write a menu driven program which has following options:
+#1) Contents of current directory
+#2) list of users who have currently logged in
+#3) present wokring directory 
+#4) Calender
+#5) Exit
+
+echo "Choose an option from below menu"
+echo "--------------------------------"
+echo "1. List of files"
+echo "2. Current logged in users"
+echo "3. Present working directory"
+echo "4. Display calendar"
+echo "5. exit"
+
+echo "\nEnter your choice: \c"
+read choice
+case $choice in
+1) ls -x
+;;
+2) who
+;;
+3) pwd
+;;
+4) echo "Enter month and year"
+read m y 
+cal $m $y
+;;
+5)banner "Thank You"
+sleep 1
+exit 0
+;;
+*) echo "Invalid option"
+;;
+esac

@@ -1,0 +1,37 @@
+# Write a program to display file contents or write on to file or execute based on user choice
+
+echo "Enter a file name: \c"
+read fname
+echo "Choose an option from below Mainu Menu"
+echo "r to read mode"
+echo "w to write mode"
+echo "x to execute mode"
+read mode
+case $mode in 
+r)
+if [ -f $fname -a -r $fname ]
+then
+cat $fname
+fi
+;;
+w)
+if [ -f $fname -a -w $fname ]
+then
+echo "Enter data for append at the end of given file to end press Ctrl+d"
+cat >> $fname
+
+cat $fname
+fi
+;;
+x) 
+if [ -f $fname -a -x $fname ] 
+then
+chmod u+x $fname
+$fname
+fi
+;;
+*) echo "Kindly enter valid option"
+;;
+esac
+#
+#

@@ -1,0 +1,10 @@
+# Write a program to check whether given string is empty or not
+
+echo "Enter a String"
+read s
+if [ -z $s ]
+then
+echo "String is empty"
+else
+echo "Given string is not empty"
+fi

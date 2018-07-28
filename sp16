@@ -1,0 +1,14 @@
+# Write a program to print greeting
+
+hour=`date | cut -c 12,13`
+if [ $hour -ge 0 -a $hour -le 11 ]
+then
+	echo "Good morning"
+else
+	if [ $hour -ge 12 -a $hour -le 16 ]
+	then
+		echo "Good after noon"
+	else
+		echo " Good evening"
+	fi
+fi

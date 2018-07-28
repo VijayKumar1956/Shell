@@ -1,0 +1,14 @@
+# Write a program to check give file is ordinary or directory file
+
+echo "Enter a file name."
+read fname
+if [ -f $fname ] 
+then
+cat $fname
+elif [ -d $fname ]
+then
+cd $fname
+ls
+else
+echo "$fname is not a file and not a directory"
+fi

@@ -1,0 +1,19 @@
+# Write a program to append data to the file
+
+echo "Enter a filename"
+read fname
+if [ -f $fname ]
+then
+	if [ -w $fname ]
+	then
+		echo "Enter data to append file and press Ctrl+d to stop"
+		cat >> $fname
+	else
+		echo "User doesn't have write permission to append the data"
+	fi
+else
+	echo "Please enter correct file name"
+fi
+#
+#
+#

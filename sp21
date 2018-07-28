@@ -1,0 +1,12 @@
+# Write a program to compare two strings
+
+echo "Enter first string"
+read s1
+echo "Enter second string"
+read s2
+if test $s1 = $s2
+then
+echo "Both strings are equal"
+else
+echo "Strings are different"
+fi

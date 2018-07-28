@@ -1,0 +1,5 @@
+#Taking inputs from user
+
+echo "what is your name?"
+read name
+echo "Welcome to shell world, $name !"

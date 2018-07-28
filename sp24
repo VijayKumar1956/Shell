@@ -1,0 +1,16 @@
+# Write a program to check given character is upper case alphabet or lower case alphabet or digit or special character
+
+echo "Enter a charcter"
+read ch
+case $ch in
+[a-z]) echo "You entered a lower case alphabet"
+;;
+[A-Z]) echo "You entered a upper case alphabet"
+;;
+[0-9]) echo "You entered a digit"
+;;
+?) echo "You entered a special character"
+;;
+*) echo "You entered more than one character"
+;;
+esac
