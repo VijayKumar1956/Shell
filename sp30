@@ -1,0 +1,10 @@
+# Write a program print even numbers b/w 0 to 20
+
+i=0
+until [ $i -gt 20 ]
+#while [ $i -le 20 ]
+do
+echo $i
+i=`expr $i + 2`
+done
+

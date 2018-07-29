@@ -1,0 +1,13 @@
+# Write a program to copy a file using positional parameters
+
+echo $@
+i=0
+echo $1
+
+
+if cp $1 $2
+then
+echo "File copied successfully"
+else
+echo "File coping failed"
+fi

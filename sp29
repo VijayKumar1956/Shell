@@ -1,0 +1,16 @@
+# Write a program display file contents if file existing 
+
+x=0
+while test $x = 0
+do
+echo "Enter a file name: \c"
+read fname
+if test ! -f $fname
+then
+echo "$fname is not found..."
+continue
+else 
+break
+fi
+done
+cat $fname

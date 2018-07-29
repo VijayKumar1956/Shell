@@ -1,0 +1,13 @@
+# Write a sample program for true command
+
+#while true
+until false
+do
+clear
+banner "Hello"
+sleep 2
+clear
+banner "Shell"
+sleep 2
+done
+

@@ -1,0 +1,11 @@
+# Write a program to display all files in current directory
+
+for i in *
+do
+if test -f $i -a -r $i
+then
+cat $i | more
+sleep 1
+clear
+fi
+done

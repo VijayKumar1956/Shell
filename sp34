@@ -1,0 +1,6 @@
+# Write a program to demonstrate for loop
+
+for i in Shell is a scripting language
+do
+echo $i
+done

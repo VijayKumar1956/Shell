@@ -1,0 +1,13 @@
+# Write a sample program for false command
+
+#while true
+until false
+do
+clear
+banner "HELLO"
+sleep 1 
+clear
+banner "SHELL"
+sleep 1 
+done
+

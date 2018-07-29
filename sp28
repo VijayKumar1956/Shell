@@ -1,0 +1,13 @@
+# Write a program copy file from root to user directory
+
+f=1
+while [ $f -eq 1 ]
+do 
+echo "Enter a file name: \c"
+read fname
+cp $fname ~vagrant
+echo "$fname copied..."
+echo $@
+echo "Do you wish to continue [1-yes/0-no]: \c"
+read f
+done
